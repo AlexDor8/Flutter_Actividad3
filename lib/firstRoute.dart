@@ -68,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
            SizedBox(
             width: 300,
             child: TextField(
+              obscureText: true,
               decoration: const InputDecoration(
                 labelText: 'Password',
                 border: OutlineInputBorder(),
