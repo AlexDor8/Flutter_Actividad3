@@ -89,8 +89,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ElevatedButton(
               child: const Text('Login'),
               onPressed: () {
-                Navigator.push(context,
+                if (email == "Usuario" && password == "12345") {
+                  Navigator.push(context,
                     MaterialPageRoute(builder: (context) => secondRoute()));
+                }
               }),
           Container(
             margin: const EdgeInsets.fromLTRB(0, 85, 0, 10),
